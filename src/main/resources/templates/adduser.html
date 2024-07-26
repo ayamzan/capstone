@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="right">
+        <span>
+            Welcome: <span sec:authentication="name">
+            </span>
+
+            <form action="/logout" style="display: inline-block;">
+                <input type="submit" value="logout">
+            </form>
+    </div>
+    <div class="center">
+        <h1 th:if="${isEdit}" class="gradient-text">Edit User</h1>
+        <h1 th:unless="${isEdit}" class="gradient-text">Add User</h1>
+        <form action="/save" th:object="${user}">
+            <table>
+                <tr>
+                    <td><label for="id">User id</label></td>
+                    <td><input class="disabled-input" type="text" th:field="*{id}" id="id" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="name">User Name</label></td>
+                    <td><input type="text" th:field="*{userName}" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Password</label></td>
+                    <td><input type="password" th:field="*{password}" id="pwd"></td>
+                </tr>
+                <!-- display the existing roles -->
+                <tr>
+                    <td>Roles</td>
+                    <td>
+                        <th:block th:each="role: ${listRoles}">
+                            <input type="checkbox" th:field="*{userRoles}" th:text="${role.name}" th:value="${role.id}">
+                        </th:block>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input th:if="${isEdit}" type="submit" value="Save">
+                        <input th:unless="${isEdit}" type="submit" value="ADD">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>
+        <p>&copy; 2024 Dummy Bank. All rights reserved.</p>/p>
+    </footer>
+</body>
+
+</html>
