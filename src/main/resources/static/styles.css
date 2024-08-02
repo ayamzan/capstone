@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Define base font size */
 html {
     font-size: 100%; /* 100% of the browser's default font size (usually 16px) */
@@ -35,6 +36,8 @@ body {
   color: #ffffff;
 }
 
+=======
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 .center {
   width: fit-content;
   margin: auto;
@@ -42,6 +45,7 @@ body {
   padding: 30px 40px;
 }
 
+<<<<<<< HEAD
 .label {
   text-align: left;
 }
@@ -49,6 +53,11 @@ body {
 /* .right {
   float: right;
 } */
+=======
+.right {
+  float: right;
+}
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 
 /* table,
 td,
@@ -85,15 +94,27 @@ input[type="submit"] {
   display: inline-block;
 }
 
+<<<<<<< HEAD
+=======
+body {
+  background-color: aliceblue;
+  /* height:100vh; */
+}
+
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 footer {
   background-color: #ffffff; /* Set footer background color */
   border-top: 1px solid #dee2e6;
   position: absolute;
   width: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: center; /* Center horizontally */
   text-align: center; /* Optional: Center footer content */
   align-items: center; /* Center vertically */
+=======
+  text-align: center; /* Optional: Center footer content */
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
   bottom: 0;
   height: 50px; /* Set footer height */
 }

@@ -24,5 +24,8 @@ public class Customer {
     private String email;
     private LocalDate dob;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9

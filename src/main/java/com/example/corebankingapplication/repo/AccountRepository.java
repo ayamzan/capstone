@@ -1,5 +1,6 @@
 package com.example.corebankingapplication.repo;
 
+<<<<<<< HEAD
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,3 +20,13 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
     List<Account> search(String searchString);
 
 }
+=======
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.corebankingapplication.model.Account;
+
+public interface AccountRepository extends JpaRepository<Account, Long>{
+
+    
+} 
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9

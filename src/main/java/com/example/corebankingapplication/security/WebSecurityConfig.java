@@ -36,6 +36,7 @@ public class WebSecurityConfig {
         http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/login", "/logout", "/styles.css", "/favicon.svg").permitAll()
+<<<<<<< HEAD
                         .requestMatchers("/", "/new", "/save", "/newrole", "/saverole", "/edit/*", "/delete/*",
                                 "/accounts/*", "/customers/*", "/transaction/*")
                         .authenticated()
@@ -45,6 +46,10 @@ public class WebSecurityConfig {
                 // .requestMatchers("/customers/*").hasAnyAuthority("ADMIN", "MANAGER",
                 // "TELLER")
                 )
+=======
+                        .requestMatchers("/", "/new", "/save", "/newrole", "/saverole", "/edit/*", "/delete/*")
+                        .authenticated())
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
                 .formLogin(fl -> fl
                         .successForwardUrl("/")
                         .permitAll())

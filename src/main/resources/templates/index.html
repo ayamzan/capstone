@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 
 <head th:replace="~{components :: head}">
 </head>
 
 <body>
   <div th:replace="~{components :: nav}"></div>
+<<<<<<< HEAD
     <!-- <span sec:authentication="principal.authorities[0]"></span> -->
 
+=======
+
+    <div th:replace="~{components :: right}"></div>
+    <!-- <span sec:authentication="principal.authorities[0]"></span> -->
+
+
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
     <div class="center">
         <h1 class="gradient-text">User Management</h1>
         <div class="table-responsive rounded">
@@ -32,9 +44,14 @@
                             </th:block>
                         </td>
                         <td>
+<<<<<<< HEAD
                             <a th:href="@{'/edit/'+${u.id}}"><i class="fa fa-edit" aria-hidden="true"></i></a>
                             &nbsp;
                             <a th:href="@{'/delete/'+${u.id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+=======
+                            <a th:href="@{'/delete/'+${u.id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <a th:href="@{'/edit/'+${u.id}}"><i class="fa fa-edit" aria-hidden="true"></i></a>
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
                         </td>
                     </tr>
                 </tbody>
@@ -51,10 +68,26 @@
 
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
     <footer th:replace="~{components :: footer}">
     </footer>
     <div th:replace="~{components :: scripts}"></div>
 </body>
 
+<<<<<<< HEAD
+=======
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+>>>>>>> main
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 </html>

@@ -1,5 +1,6 @@
 package com.example.corebankingapplication.controller;
 
+<<<<<<< HEAD
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -78,4 +79,8 @@ public class AccountController {
         return "redirect:/list";
     }
 
+=======
+public class AccountController {
+
+>>>>>>> ba02dbe2077813465877e3d1486d51783a77acf9
 }
