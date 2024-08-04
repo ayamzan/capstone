@@ -25,5 +25,3 @@ public class Customer {
     private LocalDate dob;
     private boolean enabled;
 }
-
-

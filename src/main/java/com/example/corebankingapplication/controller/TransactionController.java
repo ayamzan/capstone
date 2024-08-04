@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.corebankingapplication.model.Account;
-// import com.example.corebankingapplication.model.Customer;
 import com.example.corebankingapplication.model.Transaction;
 import com.example.corebankingapplication.repo.AccountRepository;
 import com.example.corebankingapplication.repo.TransactionRepository;
